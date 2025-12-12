@@ -106,7 +106,7 @@ body, h1, h2, p, ul, li, a {
 
     .end p {
         font-size: 1em; 
-        padding: 0 10px; /
+        padding: 0 10px; 
     }
 
    
@@ -120,6 +120,23 @@ body, h1, h2, p, ul, li, a {
 
     .footer ul li {
         margin: 10px 0; 
+    }
+
+    #seo-tasks .task {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    #seo-tasks h2 {
+        font-size: 1.8em;
+    }
+
+    #seo-tasks .task h3 {
+        font-size: 1.3em;
+    }
+
+    #seo-tasks .task p {
+        font-size: 0.95em;
     }
 }
 
@@ -191,9 +208,8 @@ body, h1, h2, p, ul, li, a {
 
 .end {
     padding: 40px;
-    background-color: #fff;
-    text-align: center;
     background-color: antiquewhite;
+    text-align: center;
 }
 
 .end h2 {
@@ -314,3 +330,50 @@ body, h1, h2, p, ul, li, a {
     background-color: #18BC9C; 
 }
 
+/* Sekcija za SEO zadatke */
+#seo-tasks {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#seo-tasks h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#seo-tasks .task {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+#seo-tasks .task:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+#seo-tasks .task h3 {
+    font-size: 1.5em;
+    color: #18BC9C;
+    margin-bottom: 10px;
+}
+
+#seo-tasks .task p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#seo-tasks .task img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
