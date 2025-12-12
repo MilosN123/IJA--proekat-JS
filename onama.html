@@ -1,76 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Nama</title>
+
+    <!-- SEO: Title i meta tagovi -->
+    <title>O Nama – Turistički sajt IJA</title>
+    <meta name="description" content="O nama – saznajte više o našem timu i misiji. Turistički sajt sa putovanjima, destinacijama i nezaboravnim iskustvima.">
+    <meta name="keywords" content="turistički sajt, o nama, putovanja, destinacije, putnička avantura, turistički vodič">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="slike/logo/icon.png">
+
+    <!-- Open Graph meta tagovi -->
+    <meta property="og:title" content="O Nama – Turistički sajt IJA">
+    <meta property="og:description" content="Otkrijte više o našem timu i misiji. Planirajte putovanja i istražite najbolje destinacije.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://milosn123.github.io/IJA--proekat-JS/onama.html">
+    <meta property="og:image" content="slike/logo/icon.png">
+
+    <!-- Canonical i Sitemap -->
+    <link rel="canonical" href="https://milosn123.github.io/IJA--proekat-JS/onama.html">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/onama.css">
 </head>
+
 <body>
-   
-    <div class="nav">
+    <!-- Navigacija -->
+    <nav class="nav">
         <ul>
-            <li><a href="index.html">POČETNA</a></li>
-            <li><a href="onama.html">O NAMA</a></li>
-            <li><a href="kontakt.html">KONTAKT</a></li>
-            <li><a href="destinacije.html">DESTINACIJE</a></li>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="destinacije.html">Destinacije</a></li>
         </ul>
-    </div>
-   
+    </nav>
+
     <main>
-        <section>
+        <!-- Uvodna sekcija -->
+        <section class="logo">
+            <img src="slike/logo/icon.png" alt="Logo turističkog sajta IJA" loading="lazy">
             <h1>O Nama</h1>
-            <p>Dobrodošli u svijet putovanja s nama. Naša misija je pružiti vam nezaboravna iskustva i olakšati planiranje vašeg sljedećeg putovanja.</p>
+            <p>Dobrodošli u svet putovanja sa nama. Naša misija je pružiti vam nezaboravna iskustva i olakšati planiranje vašeg sledećeg putovanja.</p>
+            <h2>Naša vizija i misija</h2>
+            <p>Želimo postati vaš pouzdani partner za putovanja i inspirisati vas da istražujete svet na nove načine.</p>
         </section>
 
-     
+        <!-- Naši ciljevi -->
         <section class="goals">
             <h2>Naši ciljevi</h2>
             <p>Naši glavni ciljevi su:</p>
             <ul>
                 <li>Prilagoditi putovanja vašim interesima i budžetu</li>
                 <li>Pružiti pouzdane informacije i preporuke o destinacijama</li>
-                <li>Osigurati vrhunsku korisničku podršku tijekom vašeg putovanja</li>
-                <li>Promicati održivi turizam i poštivanje lokalnih zajednica i okoliša</li>
+                <li>Osigurati vrhunsku korisničku podršku tokom vašeg putovanja</li>
+                <li>Promovisati održivi turizam i poštovanje lokalnih zajednica i okoline</li>
             </ul>
-            <img src="slike/slike1/slika.jpg" alt="Slika putovanja">
+            <img src="slike/slike1/slika.jpg" alt="Tim putovanja" loading="lazy">
         </section>
 
-        
-        <section>
-            <h2>Naša vizija</h2>
-            <p>Želimo postati vaš pouzdani partner za putovanja i inspirirati vas da istražujete svijet na nove načine.</p>
-            <p>Želimo da svako putovanje s nama bude nezaboravno iskustvo, ispunjeno avanturom, kulturom i nevjerojatnim trenucima koji će vam ostati u sjećanju zauvijek.</p>
-        </section>
-
-       
+        <!-- Zašto odabrati nas -->
         <section>
             <h2>Zašto odabrati nas?</h2>
-            <p>Kada putujete s nama, možete očekivati:</p>
+            <p>Kada putujete sa nama, možete očekivati:</p>
             <ul>
-                <li>Personalizirane putne aranžmane koji odgovaraju vašim željama i potrebama</li>
-                <li>Stručne savjete i preporuke temeljene na našem iskustvu i znanju</li>
-                <li>24/7 podršku tijekom vašeg putovanja, kako biste se osjećali sigurno i zaštićeno</li>
+                <li>Personalizovane putne aranžmane koji odgovaraju vašim željama i potrebama</li>
+                <li>Stručne savete i preporuke temeljene na našem iskustvu i znanju</li>
+                <li>24/7 podršku tokom vašeg putovanja, kako biste se osećali sigurno i zaštićeno</li>
                 <li>Angažman u održivom turizmu i podršku lokalnim zajednicama</li>
             </ul>
         </section>
 
-        <div style="text-align: center; margin: 30px;">
-            <button id="vrednostiBtn" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+        <!-- Dugme za vrednosti -->
+        <section class="tips-section" style="text-align: center; margin-top: 40px;">
+            <button id="prikaziSavete" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
                 Prikaži naše vrednosti
             </button>
-        </div>
+        </section>
     </main>
 
-    <script src="js/Onama.js"></script>
+    <!-- Footer -->
     <footer class="footer">
         <h3>Naše društvene mreže:</h3>
         <ul class="footli">
-            <li><a href="https://www.facebook.com/" >Facebook</a></li>
-            <li><a href="https://www.instagram.com/" >Instagram</a></li>
-            <li><a href="https://www.twitter.com/" >Twitter</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
         </ul>
     </footer>
+
+    <!-- JS -->
+    <script src="js/Onama.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXXXX-X'); // <- ubaci svoj GA tracking ID
+    </script>
 </body>
 </html>
+
