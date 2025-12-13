@@ -6,15 +6,15 @@
 
     <!-- SEO: Title i meta tagovi -->
     <title>O Nama – Turistički sajt IJA</title>
-    <meta name="description" content="O nama – saznajte više o našem timu i misiji. Turistički sajt sa putovanjima, destinacijama i nezaboravnim iskustvima.">
-    <meta name="keywords" content="turistički sajt, o nama, putovanja, destinacije, putnička avantura, turistički vodič">
+    <meta name="description" content="O nama – upoznajte naš tim, misiju i viziju. Planirajte putovanja, izlete i avanture širom sveta uz naše savete, preporuke i ekskluzivne turističke aranžmane.">
+    <meta name="keywords" content="turistički sajt, o nama, putovanja, destinacije, putnička avantura, turistički vodič, planiranje putovanja, izleti, aranžmani, letovanje, zimovanje, egzotične destinacije, saveti za putovanja, avanturistički turizam, porodična putovanja">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="slike/logo/icon.png">
 
     <!-- Open Graph meta tagovi -->
     <meta property="og:title" content="O Nama – Turistički sajt IJA">
-    <meta property="og:description" content="Otkrijte više o našem timu i misiji. Planirajte putovanja i istražite najbolje destinacije.">
+    <meta property="og:description" content="Otkrijte više o našem timu i misiji. Planirajte putovanja, izlete i avanture širom sveta.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://milosn123.github.io/IJA--proekat-JS/onama.html">
     <meta property="og:image" content="slike/logo/icon.png">
@@ -35,7 +35,7 @@
     <nav class="nav">
         <ul>
             <li><a href="index.html">Početna</a></li>
-            <li><a href="onama.html">O nama</a></li>
+            <li><a href="onama.html" class="active">O nama</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
             <li><a href="destinacije.html">Destinacije</a></li>
         </ul>
@@ -48,7 +48,7 @@
             <h1>O Nama</h1>
             <p>Dobrodošli u svet putovanja sa nama. Naša misija je pružiti vam nezaboravna iskustva i olakšati planiranje vašeg sledećeg putovanja.</p>
             <h2>Naša vizija i misija</h2>
-            <p>Želimo postati vaš pouzdani partner za putovanja i inspirisati vas da istražujete svet na nove načine.</p>
+            <p>Želimo postati vaš pouzdani partner za putovanja i inspirisati vas da istražujete svet na nove načine, uz stručne savete i personalizovane aranžmane.</p>
         </section>
 
         <!-- Naši ciljevi -->
@@ -65,7 +65,7 @@
         </section>
 
         <!-- Zašto odabrati nas -->
-        <section>
+        <section class="why-choose-us">
             <h2>Zašto odabrati nas?</h2>
             <p>Kada putujete sa nama, možete očekivati:</p>
             <ul>
@@ -78,9 +78,9 @@
 
         <!-- Dugme za vrednosti -->
         <section class="tips-section" style="text-align: center; margin-top: 40px;">
-          <button id="vrednostiBtn" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
-    Prikaži naše vrednosti
-</button>
+            <button id="vrednostiBtn" style="padding: 12px 24px; font-size: 16px; cursor: pointer; border-radius: 6px; background-color: #007BFF; color: #fff; border: none; transition: background 0.3s;">
+                Prikaži naše vrednosti
+            </button>
         </section>
     </main>
 
@@ -92,10 +92,11 @@
             <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
             <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
         </ul>
+        <p>&copy; 2025 Turistički sajt IJA. Sva prava zadržana.</p>
     </footer>
 
     <!-- JS -->
- <script src="js/Onama.js"></script>
+    <script src="js/Onama.js"></script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
@@ -103,10 +104,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-XXXXXXXXX-X'); // <- ubaci svoj GA tracking ID
+      gtag('config', 'UA-XXXXXXXXX-X');
     </script>
 </body>
 </html>
-
-
-
