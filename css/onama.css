@@ -34,6 +34,7 @@ body {
     font-family: var(--font-family);
     color: var(--text-color);
     line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scroll za interne linkove */
 }
 
 h1, h2, p, ul, li, a {
@@ -88,6 +89,12 @@ h1, h2, p, ul, li, a {
     color: var(--secondary-color);
     background-color: rgba(24,188,156,0.1);
     border-color: var(--secondary-color);
+}
+
+/* Focus stil za pristupačnost */
+.nav ul li a:focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
 }
 
 /* =========================
@@ -284,4 +291,15 @@ main section img:hover {
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(50px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================
+   VISUALLY HIDDEN - SEO friendly keywords
+========================= */
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
