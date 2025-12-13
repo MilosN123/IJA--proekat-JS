@@ -4,106 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO: Title i meta tagovi -->
-    <title>Turistički sajt IJA – Putovanja i destinacije</title>
-    <meta name="description" content="Turistički sajt sa informacijama o destinacijama u Srbiji, putovanjima, aranžmanima i vodičima za nezaboravna iskustva.">
-    <meta name="keywords" content="turistički sajt, destinacije Srbija, putovanja, turistički vodič, avantura, mapa destinacija">
+    <!-- SEO TITLE -->
+    <title>Turistička agencija IJA | Putovanja, aranžmani i avio karte</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="slike/logo/icon.png">
+    <!-- SEO DESCRIPTION -->
+    <meta name="description" content="Turistička agencija IJA – putovanja, letovanja, zimovanja, avio karte i aranžmani iz Beograda. Online rezervacija putovanja i hotela.">
 
-    <!-- Open Graph meta tagovi -->
-    <meta property="og:title" content="Turistički sajt IJA – Putovanja i destinacije">
-    <meta property="og:description" content="Otkrijte najbolje destinacije, inspiraciju za putovanja i korisne savete na turističkom sajtu IJA.">
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Turistička agencija IJA – Putovanja i aranžmani">
+    <meta property="og:description" content="Pronađite najbolje destinacije, jeftina putovanja, avio karte i turističke aranžmane uz IJA turističku agenciju.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://milosn123.github.io/IJA--proekat-JS/">
     <meta property="og:image" content="slike/logo/icon.png">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="slike/logo/icon.png">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/pocetna.css">
-
-    <!-- Robots meta tag (dodatna kontrola) -->
-    <meta name="robots" content="index, follow">
 </head>
 
 <body>
-    <!-- Navigacija sa anchor text -->
-    <nav class="nav">
+
+<nav class="nav">
+    <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="onama.html">O nama</a></li>
+        <li><a href="destinacije.html">Destinacije</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <!-- HERO / H1 -->
+    <section class="logo">
+        <img src="slike/logo/icon.png" alt="Turistička agencija IJA logo">
+
+        <h1>Putovanja, aranžmani i avio karte – Turistička agencija IJA</h1>
+
+        <p>
+            Dobrodošli u turističku agenciju IJA. Nudimo letovanja, zimovanja,
+            vikend putovanja, avio karte i online rezervaciju hotela.
+        </p>
+
+        <h2>Online rezervacija putovanja i hotela</h2>
+        <p>
+            Planirajte savršeno putovanje uz našu putničku agenciju online.
+            Pronađite povoljne aranžmane za Grčku, Evropu i egzotične destinacije.
+        </p>
+    </section>
+
+    <!-- DESTINACIJE -->
+    <section class="image-container">
+        <div class="image-box">
+            <img src="slike/slike1/avion.jpeg" alt="Letovi iz Beograda i avio karte">
+            <p>Letovi iz Beograda i jeftine avio karte za popularne destinacije.</p>
+        </div>
+
+        <div class="image-box">
+            <img src="slike/slike1/avion2.jpeg" alt="Letovanje i turistički aranžmani">
+            <p>Letovanja, all inclusive aranžmani i putovanja za dvoje.</p>
+        </div>
+
+        <div class="image-box">
+            <img src="slike/slike1/coek.jpg" alt="Putovanja Evropom i vikend putovanja">
+            <p>Putovanja Evropom i vikend putovanja po povoljnim cenama.</p>
+        </div>
+    </section>
+
+    <!-- SEO CONTENT SECTION -->
+    <section class="end">
+        <h2>Zašto izabrati našu turističku agenciju?</h2>
+        <p>
+            IJA je moderna putnička agencija koja nudi jeftina putovanja,
+            last minute aranžmane, rezervaciju hotela i avio karata.
+        </p>
+
+        <h2>Najpopularnije turističke usluge</h2>
         <ul>
-            <li><a href="index.html">Početna</a></li>
-            <li><a href="onama.html">O nama</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="destinacije.html">Destinacije</a></li>
+            <li>Letovanja i zimovanja</li>
+            <li>Putovanja Evropom</li>
+            <li>Last minute putovanja</li>
+            <li>Online rezervacija hotela</li>
+            <li>Avio karte iz Beograda</li>
         </ul>
-    </nav>
+    </section>
 
-    <main>
-        <!-- Logo i uvodni tekst -->
-        <section class="logo">
-            <img src="slike/logo/icon.png" alt="Logo turističkog sajta IJA">
-            <h1>Dobrodošli na našu stranicu za putovanja!</h1>
-            <p>Istražite nevjerojatne destinacije, pronađite inspiraciju za svoje sljedeće putovanje i stvorite nezaboravne uspomene.</p>
-            <h2>Otkrijte čaroliju putovanja</h2>
-            <p>Naš cilj je pružiti vam sve informacije koje vam trebaju za planiranje savršenog putovanja. Bez obzira tražite li avanturu u divljini, opuštanje na plaži ili istraživanje gradskih znamenitosti, mi smo tu da vam pomognemo.</p>
-        </section>
+    <!-- JS SAVETI -->
+    <section class="tips-section" style="text-align:center; margin-top:40px;">
+        <button id="prikaziSavete" style="padding:10px 20px; font-size:16px; cursor:pointer;">
+            Prikaži savete za putovanje
+        </button>
+        <div id="saveti-container"></div>
+    </section>
 
-        <!-- Slike sa alt tekstom -->
-        <section class="image-container">
-            <div class="image-box">
-                <img src="slike/slike1/avion.jpeg" alt="Mapa turističkih destinacija">
-                <p>Pronađite savršene destinacije uz našu mapu koja otkriva najpopularnije turističke lokacije.</p>
-            </div>
-            <div class="image-box">
-                <img src="slike/slike1/avion2.jpeg" alt="Avantura na putovanju">
-                <p>Uronite u avanture koje će vam doneti uspomene za ceo život.</p>
-            </div>
-            <div class="image-box">
-                <img src="slike/slike1/coek.jpg" alt="Putnička avantura">
-                <p>Avanturama nikad nije kraj</p>
-            </div>
-        </section>
+</main>
 
-        <!-- Sekcija sa savetima -->
-        <section class="end">
-            <h2>Zašto odabrati nas?</h2>
-            <p>Naš tim stručnjaka pažljivo bira informacije i savete koji će vaše putovanje učiniti nezaboravnim. Bez obzira da li ste ljubitelj prirode, kulture ili avanture, ovde ćete pronaći inspiraciju za svako putovanje.</p>
+<footer class="footer">
+    <h3>Pratite nas na društvenim mrežama</h3>
+    <ul class="footli">
+        <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+    </ul>
+</footer>
 
-            <h2>Započnite svoje putovanje s nama</h2>
-            <p>Pregledajte našu bogatu kolekciju putopisa i članaka. Saznajte kako da najbolje iskoristite svoje vreme, pronađete povoljan smeštaj i iskusite autentičnu lokalnu kulturu.</p>
-        </section>
-
-      <section class="tips-section" style="text-align: center; margin-top: 40px;">
-    <button id="prikaziSavete" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
-        Prikaži savete za putovanje
-    </button>
-    <div id="saveti-container"></div>
-</section>
-
-
-    <!-- Footer sa linkovima (anchor text) -->
-    <footer class="footer">
-        <h3>Naše društvene mreže:</h3>
-        <ul class="footli">
-            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
-        </ul>
-    </footer>
-
-    <!-- JS -->
-   <script src="js/index.js"></script>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-XXXXXXXXX-X'); // <- ubaci svoj GA tracking ID
-    </script>
+<script src="js/index.js"></script>
 
 </body>
 </html>
-
-
-
